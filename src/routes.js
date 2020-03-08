@@ -2,9 +2,15 @@ const express = require('express')
 
 const router = express.Router()
 
-const SessionController = require('./controllers/SesssionController')
-const authMiddleware = require('./middlewares/auth')
+const SessionController = require('./app/controllers/SessionController')
+const StudentsController = require('./app/controllers/Students')
 
-router.get('/', authMiddleware. SessionController.index)
+const authMiddleware = require('./middlewares/auth.js')
+
+
+router.use(authMiddleware);
+router.get('/', StudentsController.index)
+router.post('/', StudentsController.create)
+
 
 module.exports = router

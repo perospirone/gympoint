@@ -1,10 +1,12 @@
-const sequelize = require('sequelize')
+import jwt from 'jsonwebtoken'
 
+import authConfig from '../../auth'
+import User from '../models/User'
 
-module.exports = {
-	async index (req, res) => {
-		students = sequelize.
-
-		return res.send()
+class SessionController {
+	async store (req, res){
+		
 	}
 }
+
+export default new SessionController()
