@@ -1,15 +1,15 @@
-const express = require("express");
-const routes = require("./routes");
+import express from 'express'
+import routes from './routes'
 
 const PORT = process.env.PORT || 3000
 
-const app = express();
+const app = express()
 
-app.use(express.json());
+app.use(express.json())
 
-app.use("/", routes);
-
+app.use('/', routes)
 
 app.listen(PORT, () => {
-	console.log(`Servidor rodando na porta ${PORT}`)
-});
+  // eslint-disable-next-line no-console
+  console.log(`Servidor rodando na porta ${PORT}`)
+})

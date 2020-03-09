@@ -1,5 +1,3 @@
-'use strict'
-
 const Sequelize = require('sequelize')
 const { Model } = require('sequelize')
 
@@ -16,8 +14,8 @@ class Students extends Model {
       {
         sequelize,
       }
-    );
+    )
   }
 }
 
-module.exports = Students
+export default Students
