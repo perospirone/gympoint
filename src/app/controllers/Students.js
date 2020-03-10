@@ -1,4 +1,4 @@
-const Student = require('../models/students')
+import Student from '../models/students'
 
 class StudentController {
   async index(req, res) {
@@ -8,9 +8,9 @@ class StudentController {
   }
 
   async store(req, res) {
-    const student = await req.body
+    const student = req.body
 
-    const user = await Student.create({name: "dsasd"})
+    const user = await Student.create(student)
 
     return res.json(user)
     //return res.json(Student)

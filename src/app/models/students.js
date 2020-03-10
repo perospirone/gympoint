@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize')
-const { Model } = require('sequelize')
+
+import Sequelize, { Model } from 'sequelize'
 
 class Students extends Model {
   static init(sequelize) {
