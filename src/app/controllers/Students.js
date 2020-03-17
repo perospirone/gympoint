@@ -11,9 +11,7 @@ class StudentController {
     const student = req.body
 
     const user = await Student.create(student)
-
     return res.json(user)
-    //return res.json(Student)
   }
 }
 
