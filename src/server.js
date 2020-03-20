@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import express from 'express'
 import routes from './routes'
+import './database/index'
 
 const PORT = 3000
 

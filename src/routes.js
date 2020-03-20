@@ -11,5 +11,6 @@ const router = express.Router()
 // router.all(authMiddleware)
 router.get('/students', StudentsController.index)
 router.post('/students', StudentsController.store)
+router.put('/students/:id', StudentsController.update)
 
 module.exports = router
