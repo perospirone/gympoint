@@ -10,7 +10,8 @@ class StudentController {
   async store(req, res) {
     const student = req.body
 
-    const user = await Student.create(student)
+    const user = await Student.create(req.body)
+
     return res.json(user)
   }
 }
