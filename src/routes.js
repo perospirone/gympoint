@@ -9,7 +9,8 @@ const router = express.Router()
 
 router.post('/session', SessionController.store)
 
-router.all(authMiddleware)
+router.all('/students', authMiddleware)
+
 router.get('/students', StudentsController.index)
 router.post('/students', StudentsController.store)
 router.put('/students/:id', StudentsController.update)

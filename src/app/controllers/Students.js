@@ -1,4 +1,4 @@
-import Student from '../models/students'
+import Student from '../models/Students'
 
 class StudentController {
   async index(req, res) {
