@@ -14,6 +14,6 @@ export default async (req, res, next) => {
 
     return next()
   } catch (err) {
-    res.status(401).json({ error: 'token not found' })
+    return res.status(401).json({ error: 'token not found' })
   }
 }
